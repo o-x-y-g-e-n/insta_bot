@@ -1,0 +1,21 @@
+1514399426794	geckodriver	INFO	geckodriver 0.19.1
+1514399426799	geckodriver	INFO	Listening on 127.0.0.1:34133
+1514399427955	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.TlIDAF7GhuTk"
+1514399428890	Marionette	INFO	Enabled via --marionette
+1514399432922	Marionette	INFO	Listening on port 24412
+1514399432972	Marionette	WARN	TLS certificate errors will be ignored for this session
+1514399433046	Marionette	DEBUG	Register listener.js for window 2147483649
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1514399481081	geckodriver	INFO	geckodriver 0.19.1
+1514399481087	geckodriver	INFO	Listening on 127.0.0.1:34769
+1514399482213	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.H8XrPDWb4Db6"
+1514399483048	Marionette	INFO	Enabled via --marionette
+1514399486508	Marionette	INFO	Listening on port 9622
+1514399486536	Marionette	WARN	TLS certificate errors will be ignored for this session
+1514399486611	Marionette	DEBUG	Register listener.js for window 2147483649
+1514399486649	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1514399491070	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1514399491071	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1514399495419	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.instagram.com/"
+1514399497610	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.instagram.com/"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping

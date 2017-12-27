@@ -7,6 +7,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
 
+
 #joining connection
 browser = webdriver.Chrome("/home/oxygen_/Documents/chromedriver")
 browser.get('https://www.instagram.com')
@@ -23,7 +24,7 @@ inputs = browser.find_elements_by_xpath('//input')
 ActionChains(browser).move_to_element(inputs[0]).click()\
 					 .send_keys('poetofnights')\
 					 .move_to_element(inputs[1]).click()\
-					 .send_keys('')\
+					 .send_keys('username')\
 					 .perform()
 
 login_button = browser.find_elements_by_xpath(
@@ -60,17 +61,19 @@ xPathLink = "//a[contains(@href,'followers')]"
 followers_count = browser.find_elements_by_xpath(xPathLink)
 
 ActionChains(browser).move_to_element(followers_count[0]).click().perform()
-
-body_elem = browser.find_elements_by_xpath('//*[contains(text(),"Followers")]')
-
 time.sleep(5)
 
-for _ in range(3):
-	ActionChains(browser).move_to_element(body_elem[0]).send_keys(Keys.END)
+eles = browser.find_elements_by_class_name('_6e4x5')
+for ele in eles :
+	x = ele.find_element_by_tag_name('a') 
+	zz = x.get_attribute("href")
+	print(zz)
+
+'''for _ in range(3) :
+	body_elem_2.send_keys(Keys.END)
 	time.sleep(5)
-	ActionChains(browser).move_to_element(body_elem[0]).send_keys(Keys.HOME)
+	body_elem_2.send_keys(Keys.HOME)
 	time.sleep(5)
+'''
 
 time.sleep(5000000)
-
-browser.close()
